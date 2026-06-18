@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 150vh;
+    width: 100vw;
+    background-image: url(../biblioteca.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Capa oscura sobre la imagen */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    /* Ajusta el 0.45 si deseas más oscuridad */
+    z-index: -1;
+}
+
+:root {
+    --color-principal: #a85308;
+    --color-secundaria: #8E4E15;
+    --fuente-principal: "Dancing Script", cursive;
+}
+
+
+/* Navegación */
+.contenedor2 {
+    position: relative;
+}
+
+.nav1,
+.nav2 {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+
+li {
+    list-style: none;
+    padding: 10px;
+    text-align: center;
+}
+
+ .nav1 a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    text-shadow: 2px 2px 5px ;
+    line-height: 2;
+    display: block;
+    margin: 8px 0;
+    transition: 0.3s;
+}
+
+.nav1 a:hover{
+    color: #a85308;
+}
+
+
+/* Título */
+.titulo h1 {
+    text-align: center;
+    color: white;
+    font-family: var(--fuente-principal);
+    font-size: 60px;
+    margin-top: 20px;
+    padding: 0 10px;
+}
+/* LOGO */
+ 
+.imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen img{
+    width: 400px;
+    height: 400px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+
+    .imagen img {
+        width:800px;
+        height: 900px;
+    }
+
+    .nav1,
+    .nav2 {
+        display: grid;
+        grid-template-columns: repeat(4 ,1fr);
+        display: flex;
+        gap: 10px; 
+        margin-top: 80px;     
+    }
+
+    .contenedor2 a {
+        font-size: 15px;
+    }
+
+    .titulo h1{
+        font-size: 100px;
+        margin-top: 50px;
+    }
+}
+
+/* Computadora */
+@media (min-width: 1024px) {
+
+     .imagen img {
+        width:1000px;
+        height: 900px;
+    }
+
+    .nav1,
+    .nav2 {
+        display: grid;
+        grid-template-columns: repeat(4 ,1fr);
+        display: flex;
+        gap: 10px; 
+        margin-top: 80px;     
+    }
+
+    .contenedor2 a {
+        font-size: 15px;
+    }
+
+    .titulo h1{
+        font-size: 170px;
+        margin-top: 50px;
+    }
+}
