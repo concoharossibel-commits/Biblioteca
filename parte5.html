@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/parte5.css">
+</head>
+<body>
+    <h2>Registro de devoluciòn</h2>
+    <h3>registro de devolucion del libro</h3>
+
+    <!-- BARRA NAV-->
+    <nav class="contenedor2">
+        <ul class="nav1 nav2">
+            <li>
+                <a href="parte1.html">Registrar estudiantes y docentes</a>
+            </li>
+            <li>
+                <a href="parte2.html">Registrar los libros disponibles.</a>
+            </li>
+            <li>
+                <a href="parte3.html">Consultar la información de los libros</a>
+            </li>
+            <li>
+                <a href="parte4.html">Realizar préstamos de libros.</a>
+            </li>
+            <li>
+                <a href="parte5.html">Registrar devoluciones</a>
+            </li>
+
+            <li>
+                <a href="parte6.html">Consultar qué libros </a>
+            </li>
+            <li>
+                <a href="parte7.html">Consultar el historial de préstamos</a>
+            </li>
+            <li>
+                <a href="parte8.html">Identificar préstamos vencidos</a>
+            </li>
+            <li>
+                <a href="parte9.html">Generar reportes básicos </a>
+            </li>
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="Contenedor-Devoluciòn">
+
+        <div class="formulario">
+
+            <div class="campo">
+                <label>Codigo del libro</label>
+                <div class="fila">
+                    <input type="text" value="P0001">
+                    <button>Buscar</button>
+                </div>
+            </div>
+            <div class="Campo">
+                <label>Nombre del libro</label>
+                <input type="text" value="El principito">
+            </div>
+            <div class="Campo">
+                <label>Nombre del usario</label>
+                <input type="text" value="Juan Perez">
+            </div>
+            <div class="Campo">
+                <label>Observaciones</label>
+                <textarea placeholder="Observaciones del libro"></textarea>
+            </div>
+            <div class="Campo">
+                <label>Fecha de  devolucion</label>
+                <input type="date">
+            </div>
+            <div class="Campo">
+                <label>Estado del libro</label>
+                <select>
+                    <option>Bueno</option>
+                    <option>Regular</option>
+                    <option>Dañado</option>
+                </select>
+            </div>
+        </div>
+        <div class="Botones">
+            <button class="Cancelar">Cancelar</button>
+            <BUtton class="Registrar">Registrar</BUtton>
+        </div>
+    </div>
+    
+</body>
+</html>
